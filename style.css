@@ -51,6 +51,14 @@ a{
     
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Adjust as needed */
+    align-items: flex-start; /* Align items at the start */
+    margin-top: 12vh; /* Adjust margin to fit your layout */
+}
+
 .heading{
      background-color: white;
      height:10vmin;
@@ -67,7 +75,7 @@ a{
 .dashboard{
     height:87.2vh;
     width:150vh;
-    margin-top: 12vh;
+    
     margin-left:2rem;
     margin-bottom:2rem;
     border-radius: 2rem;
@@ -81,19 +89,20 @@ a{
 
 .box-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
 }
 .boxes{
     height:30vmin;
-    width: calc(33.33% - 1rem);
+    width: calc(50% - 2rem);
     border-radius:2rem;
-   
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top:2vmin;
     
-    margin:auto;
     margin-top:2rem;
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(244, 244, 244);
    
     
 }
@@ -150,7 +159,7 @@ i{
 .new-item {
     height:10vh;
     width: 143vh;
-    margin-top: 2rem;
+    
     margin-left:2rem;
     margin-bottom:2rem;
     border-radius: 2rem;
@@ -164,9 +173,37 @@ i{
     padding-left: 2rem;
     padding-right:2rem;
     
+    
 }
 
 .add{
     font-size: 2rem;
     background-color: white;
 }
+
+.box-description {
+   margin-top:4rem;
+   font-size: 3rem;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-field {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    outline:none;
+    
+}
+
+.add-item{
+    height:2rem;
+    width:3rem;
+    
+}
+

@@ -23,35 +23,64 @@
         <a href="#">About Us</a>
       </div>
     </nav>
-    <div class="messages">
-      <div class="heading">Messages</div>
-      <div class="ending">
-        <input type="text" placeholder="Type something" class="send-input" />
 
-        <button class="send">
-          <i class="fa-solid fa-paper-plane" class="send-icon"></i>
-        </button>
-      </div>
-    </div>
     <div class="main-container">
+      <div class="flex-container">
         <div class="dashboard">
-            <div class="head">Your item</div>
-            <div class="box-container">
-              <div class="boxes">Crop Name</div>
-              <div class="boxes">Species</div>
-              <div class="boxes">Yield</div>
-              <div class="boxes">Per Kg</div>   
-              <div class="boxes"></div>
-              <div class="boxes"></div>
+          <div class="head">Your item</div>
+          <div class="box-container">
+            <div class="boxes">
+              <div class="crop-name-heading box-heading">Crop Name</div>
+              <div class="crop-name box-description" >Paddy</div>
+            </div>
+            <div class="boxes">
+              <div class="species-heading box-heading">Species</div>
+              <div class="species box-description" >Ponni</div>
+            </div>
+            <div class="boxes">
+              <div class="per-kg-heading box-heading" >Per KG</div>
+              <div class="per-kg box-description" >30/-</div>
+            </div>
+            <div class="boxes">
+              <div class="yield-heading box-heading" >Yield</div>
+              <div class="yield box-description" >2 sq.ft</div>
             </div>
           </div>
-          <div class="new-item">
-            <div class="add-text">Add new item</div>
-            <button class="add">+</button>
+        </div>
+        <div class="messages">
+          <div class="heading">Messages</div>
+          <div class="ending">
+            <input
+              type="text"
+              placeholder="Type something"
+              class="send-input" />
+
+            <button class="send">
+              <i class="fa-solid fa-paper-plane" class="send-icon"></i>
+            </button>
           </div>
+        </div>
+      </div>
+      <div class="new-item">
+        <div class="add-text">Add new item</div>
+        <button class="add">
+            <div class="plus-icon" style="display:block;">+</div>
+            <div class="arrow" style="display: none;">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            
+        </button>
+        <div class="input-fields" style="display: none;">
+            <input type="text" placeholder="Crop Name" class="input-field" />
+            <input type="text" placeholder="Species" class="input-field" />
+            <input type="text" placeholder="Per KG" class="input-field" />
+            <input type="text" placeholder="Yield" class="input-field" />
+            <button class="add-item">Add</button>
+        </div>
+      </div>
+      
     </div>
-    
-    
+
     <script src="app.js"></script>
   </body>
 </html>
